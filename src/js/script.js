@@ -31,7 +31,7 @@
 
 // const nomeSerie1 = 'Stranger Things';
 // const temporadas1 = 4;
-// const genero1 = ['Aventura', 'Terror', 'Mistério', 'Suspense', 'Sobrenatural'];
+const genero1 = ['Aventura', 'Terror', 'Mistério', 'Suspense', 'Sobrenatural'];
 // const serieCancelada1 = false;
 // const serieConcluida1 = false;
 
@@ -83,7 +83,7 @@ const serie1 = {nomeSerie:'Stranger Things',
 
  const serie2 = {nomeSerie: 'Game of Thrones',
  temporadas: 8,
- genero: ['Fant;asia medieval', 'Drama', 'Tragédia', 'Aventura','Ação'] ,
+ genero: ['Fantasia medieval', 'Drama', 'Tragédia', 'Aventura','Ação'] ,
  serieCancelada: false,
  serieConcluida: true,
 };
@@ -117,9 +117,17 @@ if (serie2.serieCancelada === true || serie2.serieConcluida === false) {
 };
 
 if (serie3.serieCancelada === true || serie3.serieConcluida === false) {
-    listaSeries.push(serie3.nomeSerie)
+    listaSeries.push(serie3)
 } else {
     alert('Serie ' +serie3+ 'não foi adicionada');
 };
 
 console.log(listaSeries);
+
+// SEMANA 5 PARTE 1 - REFATORAR ARRAY DA SEMANA 2
+
+let string = 'Gêneros do item 1: '
+for (let i of genero1) {
+    string += `${i},`;
+};
+console.log(string)
